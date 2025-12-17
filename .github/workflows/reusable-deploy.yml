@@ -5,6 +5,10 @@ on:
     secrets:
       WXREAD_CURL_BASH:
         required: true
+      PUSH_METHOD:
+        required: true
+      WXPUSHER_SPT:
+        required: true
 
 jobs:
   deploy:
