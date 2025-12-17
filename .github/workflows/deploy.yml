@@ -24,6 +24,7 @@ jobs:
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
   wxread_2:
+    needs: wxread_1
     uses: ./.github/workflows/reusable-deploy.yml
     secrets:
       WXREAD_CURL_BASH: ${{ secrets.WXREAD_CURL_BASH_2 }}
